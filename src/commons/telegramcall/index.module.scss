@@ -1,0 +1,42 @@
+.telegram_phone {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    // display: none;
+    position: fixed;
+    bottom: 20px; 
+    right: -25px;
+    z-index: 1;
+}   
+
+.telegram_phone_img {
+    // background-color: #229ED9; 
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    z-index: 1;
+} 
+
+.telegram_circle {
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+    background-color: #229ED9;
+    position: absolute; 
+    z-index: 0;
+    right: 15px;  
+    animation: telegramanimation 1.7s infinite; 
+} 
+
+@keyframes telegramanimation{
+    from {
+        transform: scale(.5);
+        opacity: 56%;
+    } 
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

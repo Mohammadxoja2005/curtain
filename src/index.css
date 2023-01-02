@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+@font-face {
+    font-family: "interblack";
+    src: url("./assets/fonts/Inter-Black.ttf");
+} 
+
+@font-face {
+    font-family: "interregular";
+    src: url("./assets/fonts/Inter-Regular.ttf");
+}  
+
+
+@font-face {
+    font-family: "interbold";
+    src: url("./assets/fonts/Inter-Bold.ttf");
+} 

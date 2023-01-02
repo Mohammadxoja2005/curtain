@@ -1,0 +1,138 @@
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 0;
+    background-image: url('../../assets/images/contact_back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    max-width: 1278px;
+} 
+
+.contact_title {
+    color: white;
+    font-family: interregular;
+    font-size: 36px;
+} 
+
+.contact_title_custom {
+    color: black; 
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    opacity: 95%;
+    border-radius: 10px;
+    padding: 41px 70px;
+} 
+
+.contact_form_title {
+    font-size: 24px;
+    font-family: interregular;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+} 
+
+.contact_form_input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 25px;
+}  
+
+.contact_form_input:last-child {
+    margin-bottom: 36px;
+}
+
+.contact_form_input:focus {
+    border: 1px solid black;
+    outline: none;
+}   
+
+.contact_form_input::placeholder {
+    color: #A5A5A5;
+    font-family: interregular;
+    font-size: 18px; 
+} 
+
+.contact_form_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: interbold;
+    font-size: 20px;
+    background-color: #FFD200;
+    padding: 13px 95px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 55%;
+} 
+
+@media screen and (max-width: 1307px) {
+    .contact_title {
+        font-size: 27px;
+    }
+
+    .contact_form_title {
+        font-size: 18px;
+    } 
+
+    .contact_form_btn {
+        font-size: 15px;
+    }
+} 
+
+@media screen and (max-width: 768px) { 
+
+    .contact_title {
+        text-align: center;
+        margin-bottom: 30px;
+    } 
+
+    .contact_form {
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 
+
+@media screen and (max-width: 576px) {
+    .contact_title {
+        font-size: 20px;
+    } 
+
+    .contact_form_title {
+        font-size: 14px;
+    }  
+
+    .contact_form_input::placeholder {
+        font-size: 14px;
+    } 
+
+    .contact_form_btn {
+        font-size: 11px;
+    } 
+
+    .contact_form {
+        padding: 41px 35px;
+    }  
+
+    .contact_form_btn {
+        padding: 13px 60px;
+    } 
+}

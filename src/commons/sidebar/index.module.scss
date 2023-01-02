@@ -1,0 +1,300 @@
+.sidebar {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(54, 54, 54, 0.4);
+  border-radius: 0px 0px 22px 22px;
+  padding: 10px 0;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  transition: 0.2s;
+  //   position: fixed;
+  margin-bottom: 100px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.container {
+  width: 95vw;
+  max-width: 1278px;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.lan {
+  background-color: transparent;
+  margin-top: 10px;
+  position: absolute;
+  top: 20px;
+  display: none;
+  background-color: black;
+  padding: 5px;
+}
+
+.lan_li {
+  margin-bottom: 5px;
+}
+
+.mainText {
+  font-size: 20px;
+  color: white;
+}
+
+.logo {
+  margin-left: 5px;
+}
+
+.sidebar_adapt {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.sidebar_adapt_main {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.sidebar_burger {
+  width: 36px;
+  height: 4px;
+  background-color: #dab846;
+  position: relative;
+}
+
+.sidebar_burger:before {
+  content: "";
+  top: -14px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: #dab846;
+}
+
+.sidebar_burger:after {
+  content: "";
+  top: 14px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: #dab846;
+}
+
+.justline {
+  width: 100%;
+  background-color: grey;
+  z-index: 1;
+  position: absolute;
+  padding-top: 88px;
+  padding-bottom: 50px;
+}
+
+.sidebar_lan {
+  margin: auto;
+}
+
+.sidebar_lan_bar {
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sidebar_container {
+  width: 69%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar_logo_side {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_menu_side {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sidebar_links {
+  display: flex;
+}
+
+.sidebar_links_element {
+  list-style: none;
+  margin: 0px 30px;
+  cursor: pointer;
+  color: #000;
+  font-family: "interregular";
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  text-decoration: none;
+}
+
+.sidebar_links_element:after {
+  content: "";
+  position: absolute;
+  background-color: #b4a27b;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -8px;
+}
+
+.sidebar_links_element:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+
+.sidebar_links_element:hover:after {
+  color: white;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.sidebar_links_element:first-child {
+  margin-left: 0;
+}
+
+.sidebar_links_element:last-child {
+  margin-right: 0;
+}
+
+.sidebar_info {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.sidebar_phone {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.sidebar_phone_img {
+  background-color: #b4a27b;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar_phone_num {
+  margin-left: 30px;
+  color: white;
+  font-weight: 500;
+  font-family: "interregular";
+  font-size: 22px;
+}
+
+.sidebar_lan {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_lan_title {
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "interregular";
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.option {
+  background-color: transparent;
+  color: black;
+}
+
+@media screen and (max-width: 1016px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar_adapt {
+    display: block;
+  }
+
+  .sidebar_links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .sidebar_links_element {
+    margin: 0;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .sidebar_links_element:last-child {
+    margin-bottom: 0;
+  }
+
+  .sidebar_links_element:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar_links_element {
+    font-size: 25.5px;
+  }
+
+  .justline {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .sidebar_lan_bar {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar_links_element {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sidebar_maintext {
+    display: none;
+  }
+}

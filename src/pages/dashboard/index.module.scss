@@ -1,0 +1,30 @@
+.dashboard {
+    width: 100%;
+    box-sizing: border-box;
+} 
+
+.container {
+    width: 95%;
+    margin: auto;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}    
+
+.dash_overall {
+    display: flex;
+    margin: auto;
+}
+
+.dash_div {
+    height: 20px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+// table {
+//     display: flex;
+//     flex-direction: column;
+// }
